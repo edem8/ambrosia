@@ -1,8 +1,19 @@
 @import "tailwindcss";
 
+/* Default theme variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+/* Define the custom Geist Mono font */
+@font-face {
+  font-family: "High Summit";
+  src: url("/assets/font/High Summit.otf") format("opentype"),
+    url("/assets/font/High Summit.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
@@ -12,15 +23,43 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom class for text balance */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Clockwise animations at different speeds */
+.animate-spin-5 {
+  animation: spin 20s linear infinite;
+}
+.animate-spin-10 {
+  animation: spin 10s linear infinite;
+}
+.animate-spin-15 {
+  animation: spin 6.67s linear infinite;
+}
+.animate-spin-20 {
+  animation: spin 5s linear infinite;
+}
+.animate-spin-30 {
+  animation: spin 3.33s linear infinite;
+}
+
+@layer utilities {
+  /* Keyframes for clockwise spin animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
+/* Body styling with background and text colors */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "High Summit", Arial, Helvetica, sans-serif;
 }
