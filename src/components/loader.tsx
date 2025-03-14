@@ -16,7 +16,7 @@ export default function Spinner({ children, className }: CircularTextProps) {
 
   return (
     <div
-      className={cn("relative animate-spin-10 text-xs font-semibold sm:font-bold sm:text-lg", className)}
+      className={cn("relative animate-spin-10 text-xs font-medium sm:font-bold sm:text-lg", className)}
       style={{ width: size, height: size }}
     >
       <div className="w-full h-full absolute">
