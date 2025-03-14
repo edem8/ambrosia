@@ -9,8 +9,8 @@
 /* Define the custom Geist Mono font */
 @font-face {
   font-family: "High Summit";
-  src: url("/assets/font/High Summit.otf") format("opentype"),
-    url("/assets/font/High Summit.ttf") format("ttf");
+  src: url("/assets/font/High Summit.ttf") format("ttf"),
+    url("/assets/font/High Summit.otf       ") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
