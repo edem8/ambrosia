@@ -12,11 +12,14 @@ export default function Spinner({ children, className }: CircularTextProps) {
   const { radius } = useRadius();
   const text = String(children);
 
-  const size = radius ;
+  const size = radius;
 
   return (
     <div
-      className={cn("relative animate-spin-10 text-xs font-medium sm:font-bold sm:text-lg", className)}
+      className={cn(
+        "relative animate-spin-10 text-xs font-semibold sm:font-bold sm:text-lg",
+        className
+      )}
       style={{ width: size, height: size }}
     >
       <div className="w-full h-full absolute">
