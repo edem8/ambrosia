@@ -18,7 +18,7 @@ export default function PortfolioPage() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={"/assets/images/04.jpeg"}
+          src={"/assets/images/03.jpeg"}
           alt="Background"
           fill
           priority
