@@ -17,7 +17,7 @@ export default function NewsletterModal() {
                 <p className="text-xs uppercase font-[Grotesk] tracking-wider text-gray-500 font-medium">
                   RECEIVE MY LATEST THOUGHTS
                 </p>
-                <h2 className=" sm:text-2xl font-[Bellefair] tracking-wide">
+                <h2 className=" sm:text-2xl font-[Bellefair] tracking-widest">
                   SIGN UP FOR THE NEWSLETTER
                 </h2>
               </div>
