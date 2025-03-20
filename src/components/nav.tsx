@@ -5,7 +5,9 @@ import React, { useState } from "react";
 export default function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  const toggleMobileMenu = () => {};
+  const toggleMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
 
   return (
     <header className="w-full px-6 md:px-1 lg:px-12 py-10   ">

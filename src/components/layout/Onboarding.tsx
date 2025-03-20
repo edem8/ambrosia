@@ -1,24 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import { Menu, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Navigation from "../nav";
 
 export default function PortfolioPage() {
-  const [currentSlide, setCurrentSlide] = useState(1);
-  const totalSlides = 3;
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
-  };
-
   return (
     <div className="relative h-screen w-full  bg-neutral-800">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={"/assets/images/03.jpeg"}
+          src={"/assets/images/03`.jpeg"}
           alt="Background"
           fill
           priority
