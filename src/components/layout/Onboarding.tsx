@@ -37,7 +37,7 @@ export default function Portfolio() {
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col justify-between p-6 text-white">
         <div className="flex-1">
-          <NewsletterModal />
+          {/* <NewsletterModal /> */}
         </div>
 
         <div>
