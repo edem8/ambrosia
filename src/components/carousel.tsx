@@ -1,17 +1,18 @@
 import { ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
-interface SelectorProps{
-  nextSlide: (id: number) => void
+interface SelectorProps {
+  nextSlide: (id: number) => void;
+  currentSlide: number;
 }
 
-export default function Selector({nextSlide}:SelectorProps) {
-  const [currentSlide, setCurrentSlide] = useState(1);
+export default function Selector({ currentSlide, nextSlide }: SelectorProps) {
   const totalSlides = 3;
 
   const handleNextSlide = () => {
-    setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
-    nextSlide(currentSlide)
+    const newSlide = currentSlide === totalSlides ? 1 : currentSlide + 1;
+
+    nextSlide(newSlide);
   };
   return (
     <div className="flex items-center justify-between">

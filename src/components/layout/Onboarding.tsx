@@ -39,7 +39,7 @@ export default function Portfolio() {
 
         <div>
           <Line />
-          <Selector nextSlide={nextSlide} />
+          <Selector currentSlide={currentSlide} nextSlide={nextSlide} />
         </div>
       </div>
     </div>
