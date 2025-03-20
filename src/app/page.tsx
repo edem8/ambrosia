@@ -1,5 +1,4 @@
 import Spinner from "@/components/loader";
-import PortfolioPage from "@/components/layout/Onboarding";
 import dynamic from "next/dynamic";
 
 const Onboarding = dynamic(() => import("../components/layout/Onboarding"), {
