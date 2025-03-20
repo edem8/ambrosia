@@ -29,7 +29,7 @@ export default function NewsletterModal() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Type in your email"
-                    className="w-full py-3 bg-transparent text-2xl text-center font-[High-Summit] border-b border-gray-400 focus:border-gray-800 outline-none placeholder:text-gray-500 placeholder:italic placeholder:font-light"
+                    className="w-full py-2 sm:py-3 bg-transparent text-2xl text-center font-[High-Summit] border-b border-gray-400 focus:border-gray-800 outline-none placeholder:text-gray-500 placeholder:italic placeholder:font-light"
                   />
                 </div>
 
