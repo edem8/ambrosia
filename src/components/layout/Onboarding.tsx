@@ -1,15 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import Navigation from "../nav";
+import Line from "../line";
+import Selector from "../carousel";
+import { useState } from "react";
 
-export default function PortfolioPage() {
+export default function Portfolio() {
+  const [currentSlide, setCurrentSlide] = useState(1);
+
+  const nextSlide = (id: number) => {
+    setCurrentSlide(id);
+  };
   return (
     <div className="relative h-screen w-full  bg-neutral-800">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={"/assets/images/03`.jpeg"}
+          src={`/assets/images/0${currentSlide}.jpeg`}
           alt="Background"
           fill
           priority
@@ -19,32 +26,11 @@ export default function PortfolioPage() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col justify-between p-6 text-white">
-        {/* Header */}
-        <Navigation />
+        <div className="flex-1"></div>
 
-        {/* Divider */}
-        {/* <div className="w-full h-px bg-white/70 my-4"></div> */}
-
-        {/* Empty middle section */}
-        {/* <div className="flex-1"></div> */}
-
-        {/* Footer */}
         <div>
-          {/* Divider */}
-          {/* <div className="w-full h-px bg-white/70 mb-8"></div> */}
-
-          {/* Navigation */}
-          {/* <div className="flex items-center justify-between">
-            <div className="text-sm">
-              {currentSlide} <span className="mx-2">/</span> {totalSlides}
-            </div>
-            <div className="flex items-center gap-8">
-              <div className="w-24 h-px bg-white/70"></div>
-              <button onClick={nextSlide} className="p-2">
-                <ChevronRight size={24} />
-              </button>
-            </div>
-          </div> */}
+          <Line />
+          <Selector nextSlide={nextSlide} />
         </div>
       </div>
     </div>

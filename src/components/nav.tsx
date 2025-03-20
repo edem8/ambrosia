@@ -10,10 +10,10 @@ export default function Navigation() {
   };
 
   return (
-    <header className="w-full px-6 md:px-1 lg:px-12 py-10   ">
+    <header className="w-full px-6 md:px-1 lg:px-20 py-10   ">
       <nav className="flex items-center justify-between">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex  items-center space-x-4 lg:space-x-16">
+        <div className="hidden md:flex  items-center space-x-4 lg:space-x-20 ">
           <Link
             href="#about"
             className="text-sm tracking-wide hover:opacity-70 transition-opacity"
@@ -34,13 +34,14 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <div className="absolute font-medium left-1/2 transform -translate-x-1/2 text-center">
-          <h1 className=" font-[Bellefair] text-3xl md:text-2xl lg:text-5xl tracking-wider uppercase">
+        <div className=" absolute  w-2/3 font-medium left-1/2  transform -translate-x-1/2 ">
+          <h1 className=" font-[Bellefair] text-3xl md:text-2xl lg:text-4xl text-center tracking-widest uppercase">
             AGATHA AMBROSE
           </h1>
+ 
         </div>
 
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-16">
+        <div className="hidden md:flex items-center space-x-4  lg:space-x-20">
           <Link
             href="#businesses"
             className="text-sm tracking-wide hover:opacity-70 transition-opacity"
@@ -51,7 +52,7 @@ export default function Navigation() {
             href="#press"
             className="text-sm tracking-wide hover:opacity-70 transition-opacity"
           >
-            PRESS
+            NEWSLETTER
           </Link>
           <Link
             href="#contact"
