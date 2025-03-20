@@ -4,7 +4,6 @@ import Image from "next/image";
 import Line from "../line";
 import Selector from "../carousel";
 import { useEffect, useState } from "react";
-import NewsletterModal from "../newsletter";
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -36,9 +35,7 @@ export default function Portfolio() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex h-full flex-col justify-between p-6 text-white">
-        <div className="flex-1">
-          {/* <NewsletterModal /> */}
-        </div>
+        <div className="flex-1">{/* <NewsletterModal /> */}</div>
 
         <div>
           <Line />
