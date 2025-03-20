@@ -13,7 +13,7 @@ export default function NewsletterModal() {
         <DialogContent className="max-w-xl p-0 border-none rounded-none w-[90%] md:w-[70%] sm:w-[90%]">
           <div className="relative flex flex-col items-center justify-center p-10 bg-[#f0efed] text-gray-800">
             <div className="w-full max-w-xl text-center space-y-6">
-              <div className="space-y-3 mb-10">
+              <div className=" space-y-2 sm:space-y-3 mb-10">
                 <p className="text-xs uppercase font-[Grotesk] tracking-wider text-gray-500 font-medium">
                   RECEIVE MY LATEST THOUGHTS
                 </p>
