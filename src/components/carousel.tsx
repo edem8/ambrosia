@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import React, { useState } from "react";
+import React from "react";
 
 interface SelectorProps {
   nextSlide: (id: number) => void;
