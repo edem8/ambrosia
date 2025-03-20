@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Line from "../line";
 import Selector from "../carousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -11,6 +11,15 @@ export default function Portfolio() {
   const nextSlide = (id: number) => {
     setCurrentSlide(id);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide === 3 ? 1 : prevSlide + 1));
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative h-screen w-full  bg-neutral-800">
       {/* Background Image */}
