@@ -4,8 +4,9 @@ import Image from "next/image";
 import Line from "../line";
 import Selector from "../carousel";
 import { useEffect, useState } from "react";
+import Navigation from "../nav";
 
-export default function Portfolio() {
+export default function Onboarding() {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const nextSlide = (id: number) => {
@@ -34,10 +35,12 @@ export default function Portfolio() {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 flex h-full flex-col justify-between p-6 text-white">
-        <div className="flex-1">{/* <NewsletterModal /> */}</div>
+      <div className="relative z-10 flex h-full flex-col justify-between ">
+        <div className="flex-1">
+          <Navigation />
+        </div>
 
-        <div>
+        <div className="flex flex-col gap-2 lg:px-8 p-6 text-white">
           <Line />
           <Selector currentSlide={currentSlide} nextSlide={nextSlide} />
         </div>
