@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="font-[Bellefair] title tracking-wide">
         ABOUT
       </h1>
-      <div className="py-1  w-full px-6 sm:w-[80%] md:w-[70%] lg:w-[60%]  xl:w-[47%]  ">
+      <div className="py-1  w-full px-6 sm:w-[80%] md:w-[70%] lg:w-[60%]  xl:w-[46%]  ">
         <p className="  tiny tracking-wide ">
           A product manager who thrives at the intersection of design,
           engineering, and business—turning complex problems into intuitive,
