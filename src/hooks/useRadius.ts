@@ -7,7 +7,7 @@ export default function useRadius() {
 
   useEffect(() => {
     const updateRadius = () => {
-      const newRadius = window.innerWidth < 640 ? 150 : 200;
+      const newRadius = window.innerWidth < 640 ? 140 : 160;
       setRadius(newRadius);
     };
 

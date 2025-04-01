@@ -1,16 +1,32 @@
 .title {
-    font-size: 16px;
+  font-size: 16px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
-    
   }
   @media screen and (min-width: 1024px) {
     font-size: 30px;
-    
   }
   @media screen and (min-width: 1200px) {
-    font-size: 40px;
+    font-size: 39px;
+  }
+}
+
+.tiny {
+  font-size: 9.5px;
+  line-height: 1.9;
+
+  @media screen and (min-width: 375px) {
+    font-size: 10.5px;
+    line-height: 2;
+  }
+  @media screen and (min-width: 425px) {
+    font-size: 12px;
+    line-height: 2.2;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 13.7px;
+    line-height: 2.4;
     
   }
 }

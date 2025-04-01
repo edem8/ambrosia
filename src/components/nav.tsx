@@ -14,8 +14,8 @@ export default function Navigation() {
   return (
     <header className="w-full">
       <nav
-        className={`flex items-center justify-between py-10 px-10 lg:py-18 lg:px-0 xl:px-10  fixed w-full z-20 duration-300 ${
-          scrolled ? "bg-white text-black" : "text-white"
+        className={`flex items-center justify-between py-10 px-10 lg:py-18 lg:px-0 xl:px-10  md:fixed w-full z-20 duration-300 ${
+          scrolled ? "md:bg-white text-black" : "text-white"
         }`}
       >
         {/* Desktop Navigation */}
@@ -44,10 +44,10 @@ export default function Navigation() {
             NEWSLETTER
           </Link>
           <Link href="#businesses" className={navLinkClass}>
-            CONTACT
+            SHOP
           </Link>
           <Link href="#businesses" className={navLinkClass}>
-            SHOP
+            CONTACT
           </Link>
         </div>
 
@@ -105,13 +105,13 @@ export default function Navigation() {
             href="#businesses"
             className="block text-xs tracking-wide mb-2 w-full p-4 border-b border-gray-300"
           >
-            CONTACT
+            SHOP
           </Link>
           <Link
             href="#businesses"
             className="block text-xs tracking-wide mb-2 w-full p-4 border-b border-gray-300"
           >
-            SHOP
+            CONTACT
           </Link>
 
           {/* Close Button */}
