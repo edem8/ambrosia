@@ -19,7 +19,7 @@ export default function Navigation() {
         }`}
       >
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
+        <div className="hidden md:flex font-semibold items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
           <Link href="#businesses" className={navLinkClass}>
             ABOUT
           </Link>
@@ -39,7 +39,7 @@ export default function Navigation() {
         </div>
 
         {/* Desktop Navigation (Second set of links) */}
-        <div className="hidden md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
+        <div className="hidden font-semibold md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
           <Link href="#businesses" className={navLinkClass}>
             NEWSLETTER
           </Link>
