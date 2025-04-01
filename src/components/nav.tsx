@@ -14,7 +14,7 @@ export default function Navigation() {
   return (
     <header className="w-full">
       <nav
-        className={`flex items-center justify-between py-10 px-10 lg:py-18 lg:px-0 xl:px-10  md:fixed w-full z-20 duration-300 ${
+        className={`flex items-center justify-between py-10 px-10 lg:py-18 lg:px-0 xl:px-8  md:fixed w-full z-20 duration-300 ${
           scrolled ? "md:bg-white text-black" : "text-white"
         }`}
       >
