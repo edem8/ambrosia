@@ -24,10 +24,10 @@ export default function Navigation() {
             ABOUT
           </Link>
           <Link href="#businesses" className={navLinkClass}>
-            TESTIMONIAL
+            BLOGS
           </Link>
           <Link href="#businesses" className={navLinkClass}>
-            BLOGS
+            TESTIMONIAL
           </Link>
         </div>
 
