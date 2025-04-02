@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import "./globals.css";
 import "../styles/style.css";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Agatha Ambrose",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased ">
+        <main>{children}</main>
+        <Toaster position="bottom-left" />
+      </body>
     </html>
   );
 }

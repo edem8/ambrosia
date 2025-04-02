@@ -4,9 +4,7 @@ import Spinner from "../spinner";
 export default function About() {
   return (
     <div className="w-full gap-4  py-10  text-center flex flex-col items-center">
-      <h1 className="font-[Bellefair] title tracking-wide">
-        ABOUT
-      </h1>
+      <h1 className="font-[Bellefair] title tracking-wide">ABOUT</h1>
       <div className="py-1  w-full px-6 sm:w-[80%] md:w-[70%] lg:w-[60%]  xl:w-[46%]  ">
         <p className="  tiny tracking-wide ">
           A product manager who thrives at the intersection of design,

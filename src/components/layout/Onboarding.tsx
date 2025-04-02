@@ -40,7 +40,7 @@ export default function Onboarding() {
           <Navigation />
         </div>
 
-        <div className="flex flex-col gap-2 lg:px-8 p-6 text-white">
+        <div className="flex flex-col gap-2 lg:gap-8 lg:px-15 p-8 xl:px-20 text-white">
           <Line />
           <Selector currentSlide={currentSlide} nextSlide={nextSlide} />
         </div>
