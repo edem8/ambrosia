@@ -29,18 +29,21 @@ function Toast(props: ToastProps) {
         height={100}
       />
       <div className="flex flex-1 items-center">
-        <div className="w-full">
+        <div className="w-full flex flex-col ">
           <X
             size={20}
             onClick={() => sonnerToast.dismiss(id)}
             className="  hover:text-gray-300 cursor-pointer text-gray-400 place-self-end"
           />
-          <p className="text-xs tracking-wider font-medium text-gray-900">
-            {title}
-          </p>
-          <p className="mt-1 text-xs leading-4 tracking-wide text-gray-500">
-            {description}
-          </p>
+
+          <div className="w-full">
+            <p className="text-xs tracking-wider font-medium text-gray-900">
+              {title}
+            </p>
+            <p className="mt-1 text-xs leading-4 tracking-wide text-gray-500">
+              {description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
