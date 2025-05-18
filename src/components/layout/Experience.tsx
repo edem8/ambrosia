@@ -67,7 +67,7 @@ export function Experience() {
 
   return (
     <div className="w-full px-10 md:px-35 lg:px-12 lg:py-20  ">
-      <p className="place-self-center font-[High-Summit] tracking-widest text-gray-400 mb-10 text-xs md:text-sm lg:text-lg">@TheRoadmap...</p>
+      <p className="place-self-center font-[High-Summit] tracking-widest text-gray-300 mb-10 text-xs md:text-sm lg:text-lg">@TheRoadmap...</p>
       <div className="relative  ">
         {/* Experience scrolling container */}
         <div
