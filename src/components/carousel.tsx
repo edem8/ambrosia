@@ -16,11 +16,11 @@ export default function Selector({ currentSlide, nextSlide }: SelectorProps) {
   };
   return (
     <div className="flex items-center justify-between">
-      <div className="text-sm md:text-xs font-[Grotesk]">
+      <div className="text-sm md:text-xs 3xl:text-base font-[Grotesk]">
         {currentSlide} <span className="mx-1">/</span> {totalSlides}
       </div>
       <div className="flex items-center gap-1">
-        <div className="w-24 h-px bg-white"></div>
+        <div className="w-24 h-px  bg-white"></div>
 
         <button onClick={handleNextSlide} className="p-2  cursor-pointer">
           <ChevronRight size={18} />

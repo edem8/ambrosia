@@ -10,6 +10,10 @@
   @media screen and (min-width: 1200px) {
     font-size: 39px;
   }
+  @media screen and (min-width: 1500px) {
+    font-size: 49px;
+    font-weight: 500;
+  }
 }
 
 .tiny {
@@ -26,6 +30,11 @@
   }
   @media screen and (min-width: 1440px) {
     font-size: 13.5px;
+    line-height: 2.4;
+    
+  }
+  @media screen and (min-width: 1540px) {
+    font-size: 14.5px;
     line-height: 2.4;
     
   }

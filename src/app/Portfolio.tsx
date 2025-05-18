@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/layout/About";
+import { Experience } from "@/components/layout/Experience";
 import Onboarding from "@/components/layout/Onboarding";
 import toast from "@/components/toast";
 import React, { useEffect } from "react";
@@ -20,6 +21,7 @@ export default function Portfolio() {
     <div className="flex flex-col items-center justify-items-center min-h-screen gap-10 ">
       <Onboarding />
       <About />
+      <Experience />
     </div>
   );
 }

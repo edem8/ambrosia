@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased ">
         <main>{children}</main>
-        <Toaster position="bottom-left" />
+        {/* <Toaster position="bottom-left" /> */}
       </body>
     </html>
   );

@@ -9,44 +9,42 @@ export default function Navigation() {
   const { scrolled } = useIsScroll();
 
   const navLinkClass =
-    "text-xs xl:text-sm tracking-wide hover:opacity-70 opacity-70 transition-opacity";
+    "text-xs xl:text-sm 3xl:text-base 3xl:tracking-wider  tracking-wide hover:opacity-70 opacity-70 transition-opacity";
 
   return (
     <header className="w-full">
       <nav
-        className={`flex items-center justify-between py-10 px-10 lg:py-14 lg:px-0 xl:px-8  md:fixed w-full z-20 duration-300 ${
+        className={`flex items-center justify-between py-10 px-10 lg:py-14 2xl:py-20 lg:px-0 xl:px-8 3xl:px-12 md:fixed w-full z-20 duration-300 ${
           scrolled ? "md:bg-white text-black" : "text-white"
         }`}
       >
         {/* Desktop Navigation */}
-        <div className="hidden md:flex font-semibold items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
-          <Link href="#businesses" className={navLinkClass}>
+        <div className="hidden md:flex font-semibold items-center space-x-6 lg:space-x-8 xl:space-x-20 2xl:space-x-30 lg:px-20">
+          <Link href="about" className={navLinkClass}>
             ABOUT
           </Link>
-          <Link href="#businesses" className={navLinkClass}>
+          <Link href="blogs" className={navLinkClass}>
             BLOGS
           </Link>
-          <Link href="#businesses" className={navLinkClass}>
-            TESTIMONIAL
+          <Link href="testimonials" className={navLinkClass}>
+            TESTIMONIALS
           </Link>
         </div>
 
         {/* Centered Logo */}
-        <div className="absolute inset-x-0 top-0 bottom-0 hidden md:flex items-center justify-center">
-          <h1 className="font-[Bellefair] tracking-wider title  w-full text-center">
-            AGATHA AMBROSE
-          </h1>
+        <div className="absolute font-[Bellefair] inset-x-0 top-0 bottom-0 hidden md:flex items-center justify-center">
+          <h1 className="   title w-full text-center">AGATHA AMBROSE</h1>
         </div>
 
         {/* Desktop Navigation (Second set of links) */}
-        <div className="hidden font-semibold md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20 lg:px-20">
-          <Link href="#businesses" className={navLinkClass}>
+        <div className="hidden font-semibold md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20  3xl:space-x-30  lg:px-20">
+          <Link href="newsletter" className={navLinkClass}>
             NEWSLETTER
           </Link>
-          <Link href="#businesses" className={navLinkClass}>
+          <Link href="shop" className={navLinkClass}>
             SHOP
           </Link>
-          <Link href="#businesses" className={navLinkClass}>
+          <Link href="contact" className={navLinkClass}>
             CONTACT
           </Link>
         </div>
