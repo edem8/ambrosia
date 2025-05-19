@@ -13,9 +13,5 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, []);
-  return (
-    <div>
-      <Portfolio />
-    </div>
-  );
+  return <div>{showPortfolio && <Portfolio />}</div>;
 }
