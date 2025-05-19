@@ -67,7 +67,11 @@ export function Experience() {
 
   return (
     <div className="w-full px-10 md:px-35 lg:px-12 lg:py-20  ">
-      <p className="place-self-center font-[High-Summit] tracking-widest text-gray-300 mb-10 text-xs md:text-sm lg:text-lg">@TheRoadmap...</p>
+      <p className="place-self-center flex items-center space-x-20 md:space-x-40 pl-6 tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+        <p className="cursor-pointer pb-1 border-b ">Work</p>
+        <p className="cursor-pointer pb-1 border-b">Education</p>
+        <p className="cursor-pointer pb-1 border-b">Skills</p>
+      </p>
       <div className="relative  ">
         {/* Experience scrolling container */}
         <div
@@ -103,7 +107,7 @@ export function Experience() {
                 onClick={() => handleExperienceChange(index)}
               >
                 <div>
-                  <h1 className="font-[Bellefair]  text-[35px] md:text-[58px] lg:text-[90px] text-center md:leading-20 lg:leading-35">
+                  <h1 className="font-[Bellefair]  text-[35px] md:text-[58px] lg:text-[90px] text-center md:leading-20 lg:leading-30">
                     {item.title}
                   </h1>
                   <p className="  text-[8px] md:text-[11px] md:leading-5 lg:text-xs text-center  tracking-wide   lg:leading-5">
