@@ -67,7 +67,7 @@ export function Experience() {
 
   return (
     <div className="w-full px-10 md:px-35 lg:px-12 xl:px-24 lg:py-8  ">
-      <div className="place-self-center flex items-center space-x-15 md:space-x-20  px-12 bg-red-200  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+      <div className="place-self-center flex items-center space-x-15 md:space-x-20  pl-20 md:pl-6 bg-red-200  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
         <p className="cursor-pointer pb-1 border-b ">Work</p>
         <p className="cursor-pointer pb-1 border-b">Projects</p>
       </div>
