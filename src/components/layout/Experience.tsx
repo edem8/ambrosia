@@ -82,7 +82,7 @@ export function Experience() {
           }}
         >
           <div
-            className="flex items-center lg:py-8 lg:px-4  space-x-10 lg:space-x-35 w-max"
+            className="flex items-center lg:py-8 lg:px-4  space-x-6 lg:space-x-35 w-max"
             style={{
               paddingLeft: `${leftPadding}px`,
               paddingRight: `${rightPadding}px`,
