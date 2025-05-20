@@ -11,7 +11,7 @@ export const experienceData: Experience[] = [
     period: "06/2024 — PRESENT",
     role: "Product Owner",
     description:
-      "Led the development of Africa’s leading merchant payment platform, driving product strategy, stakeholder alignment, and execution across multiple markets. Managed a 50+ member cross-functional team spanning four continents, increasing productivity by 40% and improving delivery timelines by 45%. Spearheaded the design and implementation of core system components, including CBS, Postilion, Merchant App, Web Dashboard, and Backoffice. Streamlined payment collection methods (POS, USSD, QR, Payment Link, Bank Transfer, Cash, and Mobile Money) to enhance merchant adoption. Integrated Keycloak for authentication and SSO, reinforcing security, scalability, and seamless access control across the Finopay ecosystem.",
+      "Leading the development of Africa’s top merchant payment platform, driving product strategy, stakeholder alignment, and execution across multiple markets. Managing a 50+ member cross-functional team spanning four continents, increasing productivity by 40% and improving delivery timelines by 45%. Spearheading the design and implementation of core system components, including CBS, Postilion, Merchant App, Web Dashboard, and Backoffice. Streamlining payment collection methods (POS, USSD, QR, Payment Link, Bank Transfer, Cash, and Mobile Money) to enhance merchant adoption. Integrated Keycloak for authentication and SSO, reinforcing security, scalability, and seamless access control across the Finopay ecosystem.",
   },
   {
     title: "SPARK",
