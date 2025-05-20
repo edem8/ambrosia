@@ -122,7 +122,7 @@ export function Experience() {
         </div>
 
         <div className="mt-4 py-10 md:py-20 lg:mt-6 px-4  lg:px-12 text-center">
-          <p className="  text-gray-700 tiny leading-relaxed max-w-2xl mx-auto">
+          <p className="  text-gray-700 tiny leading-relaxed md:max-w-2xl mx-auto">
             {experienceData[activeIndex]?.description}
           </p>
         </div>
