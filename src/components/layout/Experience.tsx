@@ -66,11 +66,10 @@ export function Experience() {
   }, [activeIndex]);
 
   return (
-    <div className="w-full px-10 md:px-35 lg:px-12 lg:py-20  ">
-      <p className="place-self-center flex items-center space-x-20 md:space-x-40 md:pl-6 tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
-        <p className="cursor-pointer pb-1 border-b ">Work</p>
-        <p className="cursor-pointer pb-1 border-b">Education</p>
-        <p className="cursor-pointer pb-1 border-b">Skills</p>
+    <div className="w-full px-10 md:px-35 lg:px-12 xl:px-24 lg:py-8  ">
+      <p className="place-self-center flex items-center space-x-15 md:space-x-20 md:pl-6 tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+        <p className="cursor-pointer pb-1 border-b font-semibold ">Work</p>
+        <p className="cursor-pointer pb-1 border-b font-semibold">Projects</p>
       </p>
       <div className="relative  ">
         {/* Experience scrolling container */}
@@ -99,10 +98,10 @@ export function Experience() {
                     ? lastItemRef
                     : null
                 }
-                className={`year-item  transition-all p-2 duration-500 cursor-pointer ${
+                className={`year-item  transition-all  duration-500 cursor-pointer ${
                   index === activeIndex
                     ? "text-black lg:scale-130 opacity-100"
-                    : "text-gray-200 lg:scale-90 opacity-50"
+                    : "text-gray-200 lg:scale-90 opacity-45"
                 }`}
                 onClick={() => handleExperienceChange(index)}
               >
