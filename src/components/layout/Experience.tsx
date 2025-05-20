@@ -67,7 +67,7 @@ export function Experience() {
 
   return (
     <div className="w-full px-10 md:px-35 lg:px-12 xl:px-24 lg:py-8  ">
-      <p className="place-self-center flex items-center space-x-15 md:space-x-20 pl-6 tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+      <p className="place-self-center flex items-center bg-red-200 space-x-15 md:space-x-20 pl-6 tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
         <p className="cursor-pointer pb-1 border-b font-semibold ">Work</p>
         <p className="cursor-pointer pb-1 border-b font-semibold">Projects</p>
       </p>
@@ -82,7 +82,7 @@ export function Experience() {
           }}
         >
           <div
-            className="flex items-center lg:py-8 lg:px-4 lg:space-x-35 w-max"
+            className="flex items-center lg:py-8 lg:px-4  space-x-10 lg:space-x-35 w-max"
             style={{
               paddingLeft: `${leftPadding}px`,
               paddingRight: `${rightPadding}px`,
