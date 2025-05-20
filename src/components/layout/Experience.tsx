@@ -66,8 +66,8 @@ export function Experience() {
   }, [activeIndex]);
 
   return (
-    <div className="w-full px-10 md:px-35 lg:px-12 xl:px-24 lg:py-8  ">
-      <div className="place-self-center flex items-center space-x-18 md:space-x-20  pl-18 md:pl-6  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+    <div className="w-full px-10 md:px-35 lg:px-12 xl:px-26 lg:py-8  ">
+      <div className="place-self-center flex items-center space-x-18 md:space-x-30  pl-22 md:pl-0  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
         <p className="cursor-pointer pb-1 border-b ">Work</p>
         <p className="cursor-pointer pb-1 border-b">Projects</p>
       </div>
@@ -82,7 +82,7 @@ export function Experience() {
           }}
         >
           <div
-            className="flex items-center lg:py-8 lg:px-4  space-x-2 lg:space-x-35 w-max"
+            className="flex items-center lg:py-8 lg:px-4   space-x-2 lg:space-x-35 w-max"
             style={{
               paddingLeft: `${leftPadding}px`,
               paddingRight: `${rightPadding}px`,
@@ -105,7 +105,7 @@ export function Experience() {
                 }`}
                 onClick={() => handleExperienceChange(index)}
               >
-                <div>
+                <div className="">
                   <h1 className="font-[Bellefair]  text-[35px] md:text-[58px] lg:text-[90px] text-center md:leading-20 lg:leading-30">
                     {item.title}
                   </h1>
@@ -119,6 +119,12 @@ export function Experience() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-4 py-20 lg:mt-6 px-4  lg:px-12 text-center">
+          <p className="  text-gray-700 tiny leading-relaxed max-w-2xl mx-auto">
+            {experienceData[activeIndex]?.description}
+          </p>
         </div>
       </div>
     </div>
