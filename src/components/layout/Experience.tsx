@@ -108,10 +108,10 @@ export function Experience() {
                   <h1 className="font-[Bellefair]  text-[35px] md:text-[52px] lg:text-[80px] xl:text-[95px] text-center md:leading-20 lg:leading-30">
                     {item.title}
                   </h1>
-                  <p className="  text-[9px] md:text-[12px] xl:text-[12.5px] xl:pl-2  leading-4 md:leading-6 lg:text-xs text-center  tracking-wide   lg:leading-7">
+                  <p className="  text-[9px] md:text-[12px] xl:text-[12.5px]  leading-4 md:leading-6 lg:text-xs text-center  tracking-wide   lg:leading-7">
                     {item.period}
                   </p>
-                  <p className="  text-[9px] md:text-[12px] xl:text-[12.5px] xl:pl-2 leading-4 md:leading-6 lg:text-xs text-center  tracking-wide  lg:leading-7">
+                  <p className="  text-[9px] md:text-[12px] xl:text-[12.5px] leading-4 md:leading-6 lg:text-xs text-center  tracking-wide  lg:leading-7">
                     {item.role.toLocaleUpperCase()}
                   </p>
                 </div>
