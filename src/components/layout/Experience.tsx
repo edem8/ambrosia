@@ -66,10 +66,9 @@ export function Experience() {
   }, [activeIndex]);
 
   return (
-    <div className="w-full px-10 md:px-35 lg:px-12 xl:px-26 lg:py-8  ">
-      <div className="place-self-center flex items-center space-x-18 md:space-x-30  pl-16 md:pl-0  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base">
+    <div className="w-full px-5 md:px-7 lg:px-9 xl:px-10 lg:py-8  ">
+      <div className="place-self-center flex items-center  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
         <p className="pb-1 border-b ">FEATURED</p>
-    
       </div>
       <div className="relative flex flex-col items-center ">
         {/* Experience scrolling container */}
@@ -82,7 +81,7 @@ export function Experience() {
           }}
         >
           <div
-            className="flex items-center lg:py-8 lg:px-4   space-x-2 lg:space-x-35 w-max"
+            className="flex items-center lg:py-8 lg:px-4 xl:px-0  space-x-2 lg:space-x-30 xl:space-x-40 w-max"
             style={{
               paddingLeft: `${leftPadding}px`,
               paddingRight: `${rightPadding}px`,
@@ -105,14 +104,14 @@ export function Experience() {
                 }`}
                 onClick={() => handleExperienceChange(index)}
               >
-                <div className="">
-                  <h1 className="font-[Bellefair]  text-[35px] md:text-[58px] lg:text-[90px] text-center md:leading-20 lg:leading-30">
+                <div className="mb-6">
+                  <h1 className="font-[Bellefair]  text-[35px] md:text-[52px] lg:text-[80px] xl:text-[85px] text-center md:leading-20 lg:leading-30">
                     {item.title}
                   </h1>
-                  <p className="  text-[8px] md:text-[11px] md:leading-5 lg:text-xs text-center  tracking-wide   lg:leading-5">
+                  <p className="  text-[9px] md:text-[12px] leading-4 md:leading-6 lg:text-xs text-center  tracking-wide   lg:leading-7">
                     {item.period}
                   </p>
-                  <p className="  text-[8px] md:text-[11px] md:leading-5 lg:text-xs text-center  tracking-wide  lg:leading-8">
+                  <p className="  text-[9px] md:text-[12px] leading-4 md:leading-6 lg:text-xs text-center  tracking-wide  lg:leading-7">
                     {item.role.toLocaleUpperCase()}
                   </p>
                 </div>
@@ -121,8 +120,8 @@ export function Experience() {
           </div>
         </div>
 
-        <div className="  w-full sm:w-[70%] md:w-[70%] lg:w-[60%]  xl:w-[46.5%] py-5 md:py-15 md:pl:10">
-          <p className="  text-gray-700 tiny leading-relaxed md:max-w-2xl mx-auto text-center">
+        <div className="  w-full sm:w-[70%] md:w-[70%] lg:w-[58%]  xl:w-[60%] py-5 md:py-15 md:pl:10 px-1  md:px-2">
+          <p className="  text-gray-800 tiny leading-relaxed md:max-w-2xl mx-auto text-center">
             {experienceData[activeIndex]?.description}
           </p>
         </div>
