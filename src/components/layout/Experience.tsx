@@ -67,7 +67,7 @@ export function Experience() {
 
   return (
     <div className="w-full px-5 md:px-7 lg:px-9 xl:px-10 lg:py-8  ">
-      <div className="place-self-center flex items-center  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
+      <div className="place-self-center   tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
         <p className="pb-1 border-b ">FEATURED</p>
       </div>
       <div className="relative flex flex-col items-center ">
@@ -120,7 +120,7 @@ export function Experience() {
           </div>
         </div>
 
-        <div className="  w-full sm:w-[70%] md:w-[70%] lg:w-[58%]  xl:w-[60%] py-5 md:py-15 md:pl:10 px-1  md:px-2">
+        <div className="  w-full sm:w-[70%] md:w-[70%] lg:w-[58%]  xl:w-[60%] py-5 md:py-15 md:pl:10 px-1  md:px-2 xl:px-3">
           <p className="  text-gray-800 tiny leading-relaxed md:max-w-2xl mx-auto text-center">
             {experienceData[activeIndex]?.description}
           </p>
