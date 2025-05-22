@@ -67,7 +67,7 @@ export function Experience() {
 
   return (
     <div className="w-full px-5 md:px-7 lg:px-9 xl:px-10 lg:py-8  ">
-      <div className="place-self-center   tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
+      <div className="flex items-center justify-center  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
         <p className="pb-1 border-b ">FEATURED</p>
       </div>
       <div className="relative flex flex-col items-center ">
