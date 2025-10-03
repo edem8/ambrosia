@@ -1,11 +1,10 @@
 "use client";
 
-import Portfolio from "./Portfolio";
+import Portfolio from "./portfolio";
 
 export default function Home() {
   return (
     <div>
-      
       <Portfolio />
     </div>
   );

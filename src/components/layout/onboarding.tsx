@@ -15,7 +15,7 @@ export default function Onboarding() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide === 3 ? 1 : prevSlide + 1));
+      setCurrentSlide((prevSlide) => (prevSlide === 2 ? 1 : prevSlide + 1));
     }, 2500);
 
     return () => clearInterval(interval);

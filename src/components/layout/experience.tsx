@@ -66,9 +66,9 @@ export function Experience() {
   }, [activeIndex]);
 
   return (
-    <div className="w-full px-5 md:px-7 lg:px-9 xl:px-10 lg:py-8  ">
-      <div className="flex items-center justify-center  tracking-widest text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
-        <p className="pb-1 border-b ">FEATURED</p>
+    <div className="w-full px-5 md:px-7 lg:px-9 xl:px-10 lg:py-2   ">
+      <div className="flex items-center justify-center  tracking-wider text-gray-300 mb-10 md:mb-20 text-xs md:text-base lg:text-lg">
+        <p className="  tiny text-gray-400 ">Companies I've worked with</p>
       </div>
       <div className="relative flex flex-col items-center ">
         {/* Experience scrolling container */}
@@ -81,7 +81,7 @@ export function Experience() {
           }}
         >
           <div
-            className="flex items-center lg:py-8 lg:px-4 xl:px-0  space-x-2 lg:space-x-30 xl:space-x-40 w-max"
+            className="flex items-center lg:py-0 lg:px-4 xl:px-0  space-x-2 lg:space-x-30 xl:space-x-40 w-max"
             style={{
               paddingLeft: `${leftPadding}px`,
               paddingRight: `${rightPadding}px`,
@@ -105,7 +105,7 @@ export function Experience() {
                 onClick={() => handleExperienceChange(index)}
               >
                 <div className="mb-6">
-                  <h1 className="font-[Bellefair]  text-[35px] md:text-[52px] lg:text-[80px] xl:text-[95px] text-center md:leading-20 lg:leading-30">
+                  <h1 className="text-[35px] md:text-[52px] lg:text-[80px] xl:text-[95px] text-center md:leading-20 lg:leading-30">
                     {item.title}
                   </h1>
                   <p className="  text-[9px] md:text-[12px] xl:text-[12.5px]  leading-4 md:leading-6 lg:text-xs text-center  tracking-wide   lg:leading-7">
@@ -118,12 +118,6 @@ export function Experience() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="  w-full sm:w-[70%] md:w-[70%] lg:w-[58%]  xl:w-[60%] py-5 md:py-15 md:pl:10 px-1  md:px-2 xl:px-3">
-          <p className="  text-gray-800 tiny leading-relaxed md:max-w-2xl mx-auto text-center">
-            {experienceData[activeIndex]?.description}
-          </p>
         </div>
       </div>
     </div>

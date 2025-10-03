@@ -1,8 +1,11 @@
-import { X } from "lucide-react";
+"use client";
+import { ShoppingBag, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import Menu from "./menu";
 import useIsScroll from "@/hooks/useScroll";
+import { HiOutlineShoppingBag } from "react-icons/hi";
+import { FiSearch } from "react-icons/fi";
 
 export default function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -14,39 +17,23 @@ export default function Navigation() {
   return (
     <header className="w-full">
       <nav
-        className={`flex items-center justify-between py-10 px-10 lg:py-14 2xl:py-20 lg:px-0 xl:px-8 3xl:px-12 md:fixed w-full z-20 duration-300 ${
-          scrolled ? "md:bg-white text-black" : "text-white"
+        className={`flex items-center justify-around py-10 px-10 lg:py-14 2xl:py-10 lg:px-0 xl:px-8 3xl:px-12 md:fixed w-full z-20 duration-300 ${
+          scrolled ? "md:bg-white/5  backdrop-blur-xs text-black" : "text-white"
         }`}
       >
         {/* Desktop Navigation */}
-        <div className="hidden md:flex font-semibold items-center space-x-6 lg:space-x-8 xl:space-x-20 3xl:space-x-30 lg:px-20">
-          <Link href="about" className={navLinkClass}>
-            ABOUT
-          </Link>
-          <Link href="blogs" className={navLinkClass}>
-            BLOGS
-          </Link>
-          <Link href="testimonials" className={navLinkClass}>
-            TESTIMONIALS
-          </Link>
-        </div>
+        <div className="hidden md:flex font-semibold items-center space-x-6 lg:space-x-8 xl:space-x-20 3xl:space-x-30 lg:px-20"></div>
 
-        {/* Centered Logo */}
-        <div className="absolute font-[Bellefair] inset-x-0 top-0 bottom-0 hidden md:flex items-center justify-center">
-          <h1 className="   title w-full text-center">AGATHA AMBROSE</h1>
-        </div>
+        {/* Centered bag svg*/}
+        <div className="absolute  inset-x-0 top-0 bottom-0 hidden md:flex items-center justify-center"></div>
 
         {/* Desktop Navigation (Second set of links) */}
-        <div className="hidden font-semibold md:flex items-center space-x-6 lg:space-x-8 xl:space-x-20  3xl:space-x-30  lg:px-20">
-          <Link href="newsletter" className={navLinkClass}>
-            NEWSLETTER
-          </Link>
-          <Link href="shop" className={navLinkClass}>
-            SHOP
-          </Link>
-          <Link href="contact" className={navLinkClass}>
-            CONTACT
-          </Link>
+        <div className="hidden  md:flex items-center gap-4">
+          {/* <FiSearch size={22} /> */}
+          {/* <div className="bg-gray-300 px-6 flex items-center justify-between  py-3 rounded-full">
+            <p>Shop</p>
+            <HiOutlineShoppingBag size={22} />
+          </div> */}
         </div>
 
         {/* Mobile Menu Button */}

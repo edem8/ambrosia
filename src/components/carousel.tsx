@@ -7,7 +7,7 @@ interface SelectorProps {
 }
 
 export default function Selector({ currentSlide, nextSlide }: SelectorProps) {
-  const totalSlides = 3;
+  const totalSlides = 2;
 
   const handleNextSlide = () => {
     const newSlide = currentSlide === totalSlides ? 1 : currentSlide + 1;
